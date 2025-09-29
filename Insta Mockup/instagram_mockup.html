@@ -1,0 +1,208 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content = "width=device-width, initial-sacle=1 /">
+    <title>Insta UI </title>
+    <link rel = "stylesheet" href="style.css"/>
+      <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+
+</head>
+<body>
+<!-- Top Navigation -->
+<nav class="nav ig">
+  <div class="nav-inner">
+    <!-- 왼쪽: 로고(워드마크 느낌) -->
+    <div class="ig-logo">Instagram</div>
+
+    <!-- 가운데: 검색창(내장 돋보기 아이콘) -->
+    <div class="searchbar">
+      <div class="field">
+        <svg class="search-icon" viewBox="0 0 24 24" aria-hidden="true">
+          <circle cx="11" cy="11" r="7"></circle>
+          <path d="m21 21-4.3-4.3"></path>
+        </svg>
+        <input placeholder="search..." aria-label="검색" />
+      </div>
+    </div>
+
+    <!-- 오른쪽: 아이콘들 -->
+    <div class="actions actions-right">
+      <!-- 홈 -->
+      <a class="icon icon-lg" href="#" aria-label="홈">
+        <svg class="svg" viewBox="0 0 24 24"><path d="M3 9.8 12 3l9 6.8V21a1 1 0 0 1-1 1h-5v-6H9v6H4a1 1 0 0 1-1-1V9.8Z"/></svg>
+      </a>
+      <!-- 쇼핑(가방) -->
+      <a class="icon icon-lg" href="#" aria-label="쇼핑">
+        <svg class="svg" viewBox="0 0 24 24">
+          <path d="M6 7h12v13l-6-3-6 3V7Z"></path>
+          <path d="M9 7V6a3 3 0 0 1 6 0v1"></path>
+        </svg>
+      </a>
+      <!-- 메신저(말풍선 원형) -->
+      <a class="icon icon-lg" href="#" aria-label="메신저">
+        <svg class="svg" viewBox="0 0 24 24">
+          <circle cx="12" cy="12" r="9"></circle>
+          <path d="M8 13.5l3-2 2 1.5 3-3"></path>
+        </svg>
+      </a>
+      <!-- 프로필 아바타 -->
+      <div class="avatar sm" aria-label="프로필"></div>
+    </div>
+  </div>
+</nav>
+
+
+
+<!-- Page Layout -->
+<main class="wrap">
+    <section class="main">
+         <!-- 스토리 보드 -->
+      <div class="stories" aria-label="스토리 목록">
+        <ul>
+          <li>
+            <div class="avatar-ring"><div class="avatar" role="img" aria-label="user story"></div></div>
+            내 스토리
+          </li>
+            <li><div class="avatar-ring"><div class="avatar"></div></div>m627.kr</li>
+          <li><div class="avatar-ring"><div class="avatar"></div></div>bananana</li>
+          <li><div class="avatar-ring"><div class="avatar"></div></div>saengmag</li>
+          <li><div class="avatar-ring"><div class="avatar"></div></div>cakecake</li>
+          <li><div class="avatar-ring"><div class="avatar"></div></div>designlog</li>
+          <li><div class="avatar-ring"><div class="avatar"></div></div>makers</li>
+          <li><div class="avatar-ring"><div class="avatar"></div></div>todolist</li>
+        </ul>
+      </div>
+
+  <!-- 피드 -->
+      <div class="feed">
+        <!-- Post Card -->
+           <article class="post" aria-label="게시물">
+               <header class="post-head">
+            <div class="avatar" aria-hidden="true"></div>
+            <div class="meta">
+              <span class="name">seoul.mag</span>
+              <span class="time">2시간 전</span>
+            </div>
+               </header>
+               <div class="post-media" role="img" aria-label="포스트 이미지 자리"></div>
+          <div class="post-actions">
+            <div class="left-actions">
+              <button class="icon like" aria-label="좋아요">
+                <svg class="svg" viewBox="0 0 24 24"><path d="M12.1 21s-7.1-4.4-9.2-7.3A5.6 5.6 0 0 1 12 6.4a5.6 5.6 0 0 1 9.1 7.3C19 16.6 12.1 21 12.1 21Z"/></svg>
+              </button>
+              <button class="icon" aria-label="댓글">
+                <svg class="svg" viewBox="0 0 24 24"><path d="M21 12a8.5 8.5 0 0 1-8.5 8.5c-1.7 0-3.3-.5-4.7-1.4L3 21l1.9-4.6A8.5 8.5 0 1 1 21 12Z"/></svg>
+              </button>
+              <button class="icon" aria-label="공유">
+                <svg class="svg" viewBox="0 0 24 24"><path d="M4 12h9"/><path d="m10 7 5 5-5 5"/></svg>
+              </button>
+            </div>
+            <div class="right-actions">
+              <button class="icon" aria-label="저장">
+                <svg class="svg" viewBox="0 0 24 24"><path d="M6 3h12v18l-6-4-6 4V3Z"/></svg>
+              </button>
+            </div>
+          </div>
+               <div class="post-body">
+            <div class="likes">좋아요 1,284개</div>
+            <div class="caption"><span class="name">fashion_ak</span>Today's color ✨ </div>
+            <button class="view-comments">댓글 23개 모두 보기</button>
+            <div class="post-time">2 HOURS AGO</div>
+          </div>
+          <div class="comment-bar">
+            <button class="icon" aria-label="이모지">
+              <svg class="svg" viewBox="0 0 24 24"><circle cx="12" cy="12" r="9"/><path d="M8 10h.01M16 10h.01"/><path d="M8 15s2 2 4 2 4-2 4-2"/></svg>
+            </button>
+            <input placeholder="댓글 달기..." aria-label="댓글 달기" />
+            <button class="publish" disabled>게시</button>
+          </div>
+        </article>
+
+ <!-- Another Post -->
+        <article class="post">
+          <header class="post-head">
+            <div class="avatar"></div>
+            <div class="meta">
+              <span class="name">designnofashion</span>
+              <span class="time"> 어제 • 스튜디오</span>
+            </div>
+          </header>
+          <div class="post-media" style="background: linear-gradient(180deg,#60a5fa,#c4b5fd)"></div>
+          <div class="post-actions">
+            <div class="left-actions">
+              <button class="icon like is-on" aria-label="좋아요됨">
+                <svg class="svg" viewBox="0 0 24 24"><path d="M12.1 21s-7.1-4.4-9.2-7.3A5.6 5.6 0 0 1 12 6.4a5.6 5.6 0 0 1 9.1 7.3C19 16.6 12.1 21 12.1 21Z"/></svg>
+              </button>
+              <button class="icon" aria-label="댓글">
+                <svg class="svg" viewBox="0 0 24 24"><path d="M21 12a8.5 8.5 0 0 1-8.5 8.5c-1.7 0-3.3-.5-4.7-1.4L3 21l1.9-4.6A8.5 8.5 0 1 1 21 12Z"/></svg>
+              </button>
+              <button class="icon" aria-label="공유">
+                <svg class="svg" viewBox="0 0 24 24"><path d="M4 12h9"/><path d="m10 7 5 5-5 5"/></svg>
+              </button>
+            </div>
+            <div class="right-actions">
+              <button class="icon" aria-label="저장">
+                <svg class="svg" viewBox="0 0 24 24"><path d="M6 3h12v18l-6-4-6 4V3Z"/></svg>
+              </button>
+            </div>
+          </div>
+          <div class="post-body">
+            <div class="likes">좋아요 842개</div>
+            <div class="caption"><span class="name">designnofashion</span>blue🦕</div>
+            <button class="view-comments">댓글 9개 모두 보기</button>
+            <div class="post-time">1 DAY AGO</div>
+          </div>
+          <div class="comment-bar">
+            <button class="icon" aria-label="이모지">
+              <svg class="svg" viewBox="0 0 24 24"><circle cx="12" cy="12" r="9"/><path d="M8 10h.01M16 10h.01"/><path d="M8 15s2 2 4 2 4-2 4-2"/></svg>
+            </button>
+            <input placeholder="댓글 달기..." />
+            <button class="publish" disabled>게시</button>
+          </div>
+        </article>
+      </div>
+    </section>
+ <!-- Sidebar -->
+    <aside class="side" aria-label="사이드바">
+      <div class="me">
+        <div class="avatar" aria-hidden="true"></div>
+        <div>
+          <div class="name">한송미</div>
+          <div class="id">so0som</div>
+        </div>
+      </div>
+
+      <div class="suggest">
+        <h4>회원님을 위한 추천</h4>
+        <div class="s-item">
+          <div class="who">
+            <div class="avatar"></div>
+            <div class="txt"><div class="name">ml.gaze</div><div class="why">designnofashion에서 팔로우</div></div>
+          </div>
+          <button class="follow">팔로우</button>
+        </div>
+        <div class="s-item">
+          <div class="who">
+            <div class="avatar" style="background: linear-gradient(135deg,#93c5fd,#86efac)"></div>
+            <div class="txt"><div class="name">starbucks</div><div class="why">추천</div></div>
+          </div>
+          <button class="follow">팔로우</button>
+        </div>
+        <div class="s-item">
+          <div class="who">
+            <div class="avatar" style="background: linear-gradient(135deg,#fda4af,#fcd34d)"></div>
+            <div class="txt"><div class="name">pringles</div><div class="why">추천</div></div>
+          </div>
+          <button class="follow">팔로우</button>
+        </div>
+      </div>
+
+      <div class="footer">
+      </div>
+    </aside>
+  </main>
+
+</body>
+</html>
